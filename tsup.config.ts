@@ -1,6 +1,6 @@
 import type { Options } from "tsup";
 
-export default <Options>{
+export default {
   entryPoints: ["src/index.ts"],
   outDir: "dist",
   format: ["esm", "cjs"],
@@ -8,4 +8,4 @@ export default <Options>{
   clean: true,
   dts: true,
   minify: true,
-};
+} as Options;
